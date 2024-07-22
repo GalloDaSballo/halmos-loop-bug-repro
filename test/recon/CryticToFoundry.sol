@@ -132,10 +132,10 @@ contract CryticToFoundry is Test, TargetFunctions, FoundryAsserts {
 
     // forge test --match-test test_counterSymbolic -vv
     function test_counterSymbolic() public {
-        bytes4[] memory selectors = new bytes4[](3);
+        bytes4[] memory selectors = new bytes4[](1);
         selectors[0] = this.TwTAP_participate.selector;
 
-        Data[] memory theData =  new Data[](3);
+        Data[] memory theData =  new Data[](1);
         theData[0] = Data({
             _tokenId: 0,
             _to: address(0),
